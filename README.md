@@ -1,2 +1,16 @@
-# os-
-case study
+Part 3 :  OS case study 
+CMPT 300: Case Study 
+1.	Introduction 
+Android is an operating system which is based on Linux kernel. Android is mainly used in cell phones and tablets and it is applied by a lot famous companies such as Samsung.  Being as the product from Google, Android is open source OS which provides a lot chances to developers to study it and use it well. In this report, there will be a comprehensive analysis of the latest Android version called Android Oreo.
+
+Structure of Android Oreo is 5 layered which includes system applications, API Framework, library, Hardware Abstraction Layer and Linux Kernel. In API Framework, Android Oreo include rich and scalable View, content providers, resource manager, notification manager and activity manager. The architectural design of the application simplifies the reuse of components. 
+
+Linux is programed by C. The kernel layer in Android Oreo is based on Linux, therefore its kernel programing language is C. In terms the the other parts of system, they are developed in Java and most common application running in Android Oreo is developed by Java as well. Android Ores has10G source code. One character takes one byte, therefore there are more than 10 billion characters. Assume each line applied the standard of 80 characters, the code the Android Oreo operating system has about 100 million lines of code there.
+
+2.	CPU Scheduling
+Android Oreo mainly uses priority scheduling algorithm where higher the priority of the process has more allocating CPU time and the lower the priority of the process has less allocated CPU time. Android directly calls the system API set priority, which has three parameters. It is not hard to think the reason of applying priority based scheduling algorithm. When using one APP, this specific App will take the whole screen of your phone, at the same time the CPU in your phone is working so hard for this APP to achieve the effects that users need. This can be understood that at this time, this APP might have highest priority. For the APP runs in background might not take much CPU during the period. 
+
+Android Oreo system has multiple models to optimize the usage of CPU and also improve the user experience of OS. Providing enough supports when there is huge demand, and saving as much as possible energy when no application running.  There are like around 15 models there, such as ‘Ondemand’, ‘interactive’, ‘conservative’, ‘smartass’ , ‘powersave’, etc. To illustrate how do they optimize CPU usage, the following part will introduce ‘Ondemand’ model. ‘Ondemand’ model adjust the CPU frequency according to need. It does not operate the phone when the control at the lowest frequency. Achieve when users slide or enter the application will quickly upgrade to the highest frequency. When phone is idle quickly reduce the frequency.  Battery is always a hot topic, 
+
+In Android Oreo, if CPU could handle well, it will need strong hardware support in order to have a smooth performance which will cost a lot. Although there are a lot phones which use Android operating system are much cheaper than iPhone (whose performance is good but expensive), those phones cannot achieve what Android is really working. Open source gives a lot chances to many devices, but the performance is much different between different hardware on the devices.
+
